@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sri Aurobindo College | Degree Unit, Mahalakshmipuram, Rajajinagar, Bengaluru</title>
+<meta name="description" content="Sri Aurobindo College degree unit in Mahalakshmipuram, Rajajinagar, Bengaluru. B.Com, BBA and BCA programmes. Founded in 1996 by the Rajajinagar Education Society.">
+<meta name="theme-color" content="#F4A62A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%231C1F4A'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' text-anchor='middle' fill='%23F4A62A'%3ESA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1C1F4A;
+    --ink-soft: #464A75;
+    --marigold: #F4A62A;
+    --marigold-deep: #D98A0B;
+    --paper: #F5F6FA;
+    --mist: #E1E5F4;
+    --white: #FFFFFF;
+    --metro: #2E9E4F;
+
+    --serif: "Young Serif", Georgia, "Times New Roman", serif;
+    --sans: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+    --wrap: 1180px;
+    --gutter: clamp(1.25rem, 4vw, 2.5rem);
+    --section: clamp(4rem, 9vw, 7rem);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+  body {
+    margin: 0;
+    font-family: var(--sans);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--paper);
+    -webkit-font-smoothing: antialiased;
+  }
+  img, iframe { max-width: 100%; display: block; }
+  a { color: inherit; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.1; margin: 0; }
+  p { margin: 0 0 1em; }
+  ul, ol { margin: 0; padding: 0; }
+
+  :focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 4px; }
+  .on-dark :focus-visible { outline-color: var(--marigold); }
+
+  .skip {
+    position: absolute; left: 1rem; top: -4rem; z-index: 100;
+    background: var(--ink); color: var(--white); padding: .75rem 1rem; border-radius: 6px;
+  }
+  .skip:focus { top: 1rem; }
+
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
+
+  /* ---------- Header ---------- */
+  .site-header {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--white);
+    border-bottom: 1px solid var(--mist);
+  }
+  .site-header .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1.5rem; min-height: 4.5rem;
+  }
+  .brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; }
+  .brand-mark {
+    width: 2.75rem; height: 2.75rem; flex: none;
+    display: grid; place-items: center;
+    border-radius: 50%;
+    background: var(--ink); color: var(--marigold);
+    font-family: var(--serif); font-size: 1.1rem; letter-spacing: .02em;
+  }
+  .brand-name { display: block; font-family: var(--serif); font-size: 1.2rem; line-height: 1.15; }
+  .brand-unit { display: block; font-size: .875rem; color: var(--ink-soft); }
+
+  .nav ul { list-style: none; display: flex; align-items: center; gap: .25rem; }
+  .nav a {
+    display: block; padding: .5rem .75rem; border-radius: 6px;
+    text-decoration: none; font-weight: 500; font-size: .975rem;
+  }
+  .nav a:hover { background: var(--paper); }
+  .nav .nav-cta { background: var(--ink); color: var(--white); margin-left: .5rem; }
+  .nav .nav-cta:hover { background: var(--ink-soft); }
+
+  .menu-btn {
+    display: none;
+    background: none; border: 1px solid var(--mist); border-radius: 6px;
+    padding: .5rem .75rem; font: inherit; font-weight: 600; color: var(--ink); cursor: pointer;
+  }
+
+  @media (max-width: 900px) {
+    .menu-btn { display: inline-flex; align-items: center; gap: .5rem; }
+    .nav {
+      position: absolute; left: 0; right: 0; top: 100%;
+      background: var(--white); border-bottom: 1px solid var(--mist);
+      display: none;
+    }
+    .nav.is-open { display: block; }
+    .nav ul { flex-direction: column; align-items: stretch; padding: .5rem var(--gutter) 1rem; }
+    .nav a { padding: .85rem .5rem; border-bottom: 1px solid var(--paper); }
+    .nav .nav-cta { margin: .75rem 0 0; text-align: center; border-bottom: 0; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero { background: var(--marigold); padding: clamp(3rem, 8vw, 6rem) 0 clamp(3.5rem, 8vw, 6rem); }
+  .hero .wrap {
+    display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: clamp(2rem, 5vw, 4.5rem); align-items: end;
+  }
+  .hero-place { font-weight: 600; font-size: 1rem; margin-bottom: 1.5rem; }
+  .hero h1 {
+    font-size: clamp(2.9rem, 5.2vw + 1rem, 5.75rem);
+    line-height: 1.0;
+    letter-spacing: -0.015em;
+    max-width: 11ch;
+    margin-bottom: 1.75rem;
+  }
+  .hero-lede { font-size: 1.2rem; line-height: 1.55; max-width: 34rem; margin-bottom: 2rem; }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: .9rem 1.4rem; border-radius: 999px;
+    font: inherit; font-weight: 600; text-decoration: none; cursor: pointer;
+    border: 2px solid var(--ink);
+  }
+  .btn-solid { background: var(--ink); color: var(--white); }
+  .btn-solid:hover { background: var(--ink-soft); border-color: var(--ink-soft); }
+  .btn-line { background: transparent; color: var(--ink); }
+  .btn-line:hover { background: rgba(28, 31, 74, .08); }
+  .btn-row { display: flex; flex-wrap: wrap; gap: .75rem; }
+
+  .programmes {
+    background: var(--ink); color: var(--white);
+    border-radius: 20px; padding: 1.75rem 1.75rem .75rem;
+  }
+  .programmes h2 { font-family: var(--sans); font-size: 1rem; font-weight: 600; color: #C8CCEA; margin-bottom: .5rem; }
+  .programmes ul { list-style: none; }
+  .programmes li + li { border-top: 1px solid rgba(255,255,255,.14); }
+  .programmes a {
+    display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: .25rem 1rem;
+    padding: 1.1rem 0; text-decoration: none;
+  }
+  .programmes .p-code { font-family: var(--serif); font-size: 2.25rem; line-height: 1; color: var(--marigold); }
+  .programmes .p-years { font-size: .9rem; color: #C8CCEA; }
+  .programmes .p-name { grid-column: 1 / -1; font-size: .975rem; }
+  .programmes a:hover .p-name { text-decoration: underline; text-underline-offset: 3px; }
+
+  /* single page-load sequence */
+  @media (prefers-reduced-motion: no-preference) {
+    .rise { opacity: 0; transform: translateY(14px); animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+    .rise-1 { animation-delay: .05s; }
+    .rise-2 { animation-delay: .15s; }
+    .rise-3 { animation-delay: .3s; }
+    .rise-4 { animation-delay: .42s; }
+    .rise-5 { animation-delay: .55s; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+  }
+
+  /* ---------- Facts ---------- */
+  .facts { background: var(--white); border-bottom: 1px solid var(--mist); }
+  .facts ul {
+    list-style: none;
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .facts li { padding: 1.5rem 1.25rem 1.5rem 0; }
+  .facts li + li { padding-left: 1.25rem; border-left: 1px solid var(--mist); }
+  .facts strong { display: block; font-family: var(--serif); font-weight: 400; font-size: 1.35rem; line-height: 1.2; }
+  .facts span { font-size: .95rem; color: var(--ink-soft); }
+
+  /* ---------- Sections ---------- */
+  .section { padding: var(--section) 0; }
+  .section-white { background: var(--white); }
+  .section-head { max-width: 40rem; margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+  .section-head h2 { font-size: clamp(2.1rem, 2.4vw + 1.2rem, 3.25rem); margin-bottom: 1rem; }
+  .section-head p { font-size: 1.15rem; color: var(--ink-soft); margin: 0; }
+
+  /* About */
+  .about-grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(2rem, 6vw, 5rem); }
+  .about-copy p { max-width: 36rem; }
+  .about-copy p:first-of-type { font-size: 1.2rem; }
+
+  .timeline { list-style: none; position: relative; }
+  .timeline::before {
+    content: ""; position: absolute; left: 3.75rem; top: .5rem; bottom: .5rem;
+    width: 2px; background: var(--mist);
+  }
+  .timeline li { display: grid; grid-template-columns: 3.75rem 1fr; gap: 1.5rem; padding-bottom: 1.75rem; position: relative; }
+  .timeline li:last-child { padding-bottom: 0; }
+  .timeline li::after {
+    content: ""; position: absolute; left: calc(3.75rem - 5px); top: .45rem;
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--marigold); border: 2px solid var(--ink);
+  }
+  .timeline .year { font-family: var(--serif); font-size: 1.15rem; padding-top: .05rem; }
+  .timeline p { margin: 0; padding-left: .75rem; }
+  .timeline b { display: block; font-weight: 600; }
+
+  /* Courses */
+  .course-list { list-style: none; border-top: 2px solid var(--ink); }
+  .course {
+    display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 4fr) minmax(0, 4fr);
+    gap: 1.5rem clamp(1.5rem, 4vw, 3rem);
+    padding: clamp(1.75rem, 4vw, 2.5rem) 0;
+    border-bottom: 1px solid var(--mist);
+  }
+  .course h3 { font-size: clamp(2.25rem, 3vw + 1rem, 3.25rem); line-height: 1; margin-bottom: .5rem; }
+  .course .full { font-weight: 600; margin-bottom: .35rem; }
+  .course .meta { color: var(--ink-soft); font-size: .95rem; margin: 0; }
+  .course h4 { font-size: .95rem; font-weight: 600; margin: 0 0 .6rem; color: var(--ink-soft); }
+  .course ul { list-style: none; }
+  .course li { padding: .3rem 0 .3rem 1.1rem; position: relative; }
+  .course li::before {
+    content: ""; position: absolute; left: 0; top: .85rem;
+    width: 6px; height: 6px; border-radius: 50%; background: var(--marigold-deep);
+  }
+  .note {
+    margin-top: 2rem; padding: 1.25rem 1.5rem;
+    background: var(--mist); border-radius: 12px; max-width: 48rem;
+  }
+  .note p { margin: 0; }
+  .note p + p { margin-top: .5rem; }
+
+  /* Beyond the classroom */
+  .beyond-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.5rem, 4vw, 3rem); }
+  .beyond-grid h3 { font-size: 1.6rem; margin-bottom: .9rem; }
+  .beyond-grid p { color: var(--ink-soft); }
+  .tag-list { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; }
+  .tag-list li {
+    padding: .4rem .85rem; border-radius: 999px;
+    border: 1px solid var(--ink); font-size: .95rem; font-weight: 500;
+  }
+  .plain-list { list-style: none; }
+  .plain-list li { padding: .65rem 0; border-bottom: 1px solid var(--mist); }
+  .plain-list li:first-child { padding-top: 0; }
+
+  /* Admissions */
+  .admit-grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(2rem, 6vw, 4.5rem); align-items: start; }
+  .steps { list-style: none; counter-reset: step; }
+  .steps li {
+    counter-increment: step;
+    display: grid; grid-template-columns: 3rem 1fr; gap: 1rem;
+    padding: 1.25rem 0; border-bottom: 1px solid var(--mist);
+  }
+  .steps li:first-child { padding-top: 0; }
+  .steps li::before {
+    content: counter(step);
+    width: 2.5rem; height: 2.5rem; border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--marigold); font-family: var(--serif); font-size: 1.15rem;
+  }
+  .steps b { display: block; font-weight: 600; font-size: 1.1rem; }
+  .steps p { margin: .15rem 0 0; color: var(--ink-soft); }
+
+  .docs { margin-top: 2.5rem; }
+  .docs h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+  .docs ul { list-style: none; columns: 2; column-gap: 2rem; }
+  .docs li { padding: .35rem 0 .35rem 1.75rem; position: relative; break-inside: avoid; }
+  .docs li::before {
+    content: ""; position: absolute; left: 0; top: .6rem;
+    width: 1rem; height: 1rem; border: 2px solid var(--ink); border-radius: 4px;
+  }
+
+  .enquiry { background: var(--white); border: 2px solid var(--ink); border-radius: 20px; padding: clamp(1.5rem, 4vw, 2.25rem); }
+  .enquiry h3 { font-size: 1.85rem; margin-bottom: .5rem; }
+  .enquiry > p { color: var(--ink-soft); }
+  .field { margin-bottom: 1.1rem; }
+  .field label { display: block; font-weight: 600; margin-bottom: .35rem; }
+  .field input, .field select, .field textarea {
+    width: 100%; font: inherit; color: var(--ink);
+    padding: .75rem .9rem; border: 1.5px solid #B9BFDB; border-radius: 10px; background: var(--paper);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    outline: 3px solid var(--marigold); outline-offset: 0; border-color: var(--ink); background: var(--white);
+  }
+  .field textarea { min-height: 6rem; resize: vertical; }
+  .field .error { display: none; color: #B3261E; font-size: .9rem; margin-top: .35rem; }
+  .field.invalid input { border-color: #B3261E; }
+  .field.invalid .error { display: block; }
+  .enquiry .btn { width: 100%; }
+  .form-status { margin: 1rem 0 0; font-size: .95rem; min-height: 1.5em; }
+
+  /* Visit */
+  .visit-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(2rem, 5vw, 4rem); }
+  .contact-list { list-style: none; margin-bottom: 2.5rem; }
+  .contact-list li { padding: 1rem 0; border-bottom: 1px solid var(--mist); }
+  .contact-list li:first-child { padding-top: 0; }
+  .contact-list .label { display: block; font-size: .9rem; color: var(--ink-soft); font-weight: 500; }
+  .contact-list a { font-weight: 600; text-underline-offset: 3px; }
+  .contact-list address { font-style: normal; font-weight: 500; }
+
+  .metro h3 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin-bottom: 1.1rem; }
+  .metro-line { list-style: none; display: flex; justify-content: space-between; gap: .4rem; position: relative; }
+  .metro-line::before {
+    content: ""; position: absolute; left: .5rem; right: .5rem; top: .5rem;
+    height: 5px; background: var(--metro); border-radius: 3px;
+  }
+  .metro-line li {
+    position: relative; flex: 1; text-align: center;
+    padding-top: 1.75rem; font-size: .82rem; line-height: 1.3; color: var(--ink-soft);
+  }
+  .metro-line li::before {
+    content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 1.1rem; height: 1.1rem; border-radius: 50%;
+    background: var(--white); border: 4px solid var(--metro);
+  }
+  .metro-line li:first-child { text-align: left; }
+  .metro-line li:first-child::before { left: 0; transform: none; }
+  .metro-line li:last-child { text-align: right; }
+  .metro-line li:last-child::before { left: auto; right: 0; transform: none; }
+  .metro-line .here { color: var(--ink); font-weight: 700; }
+  .metro-line .here::before { width: 1.5rem; height: 1.5rem; top: -.2rem; background: var(--marigold); border-color: var(--ink); }
+  .metro p { margin-top: 1.25rem; font-size: .95rem; color: var(--ink-soft); }
+
+  .map {
+    border-radius: 20px; overflow: hidden; border: 2px solid var(--ink);
+    min-height: 420px; background: var(--mist);
+  }
+  .map iframe { width: 100%; height: 100%; min-height: 420px; border: 0; }
+
+  /* Footer */
+  .site-footer { background: var(--ink); color: #D9DCF0; padding: clamp(3rem, 6vw, 4.5rem) 0 2rem; }
+  .footer-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 3fr) minmax(0, 4fr); gap: 2rem; }
+  .site-footer .brand-name { color: var(--white); font-size: 1.5rem; margin-bottom: .5rem; }
+  .site-footer h2 { font-family: var(--sans); font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: .75rem; }
+  .site-footer ul { list-style: none; }
+  .site-footer li { padding: .2rem 0; }
+  .site-footer a { color: #D9DCF0; text-underline-offset: 3px; }
+  .site-footer a:hover { color: var(--marigold); }
+  .footer-base {
+    margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,.14);
+    font-size: .9rem; color: #A9AED3; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem;
+  }
+  .footer-base p { margin: 0; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 960px) {
+    .hero .wrap, .about-grid, .admit-grid, .visit-grid { grid-template-columns: 1fr; }
+    .hero h1 { max-width: 13ch; }
+    .course { grid-template-columns: 1fr 1fr; }
+    .course > :first-child { grid-column: 1 / -1; }
+    .beyond-grid { grid-template-columns: 1fr 1fr; }
+    .beyond-grid > :first-child { grid-column: 1 / -1; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid > :first-child { grid-column: 1 / -1; }
+  }
+  @media (max-width: 720px) {
+    .facts ul { grid-template-columns: 1fr 1fr; }
+    .facts li { padding: 1.25rem 1rem 1.25rem 0; }
+    .facts li + li { padding-left: 0; border-left: 0; }
+    .facts li:nth-child(even) { padding-left: 1rem; border-left: 1px solid var(--mist); }
+    .facts li:nth-child(n+3) { border-top: 1px solid var(--mist); }
+  }
+  @media (max-width: 600px) {
+    body { font-size: 1rem; }
+    .brand-unit { font-size: .8rem; }
+    .course, .beyond-grid, .footer-grid { grid-template-columns: 1fr; }
+    .docs ul { columns: 1; }
+    .btn-row .btn { flex: 1 1 100%; }
+    .metro-line li { font-size: .85rem; }
+    .metro-line li:first-child, .metro-line li:last-child { display: none; }
+    .metro-line li:nth-child(2) { text-align: left; }
+    .metro-line li:nth-child(2)::before { left: 0; transform: none; }
+    .metro-line li:nth-child(4) { text-align: right; }
+    .metro-line li:nth-child(4)::before { left: auto; right: 0; transform: none; }
+    .map, .map iframe { min-height: 320px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Sri Aurobindo College, home">
+      <span class="brand-mark" aria-hidden="true">SA</span>
+      <span>
+        <span class="brand-name">Sri Aurobindo College</span>
+        <span class="brand-unit">Degree unit, Mahalakshmipuram</span>
+      </span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#campus">Campus life</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#visit">Contact</a></li>
+        <li><a class="nav-cta" href="#enquire">Enquire now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="hero-place rise rise-1">Degree unit of Sri Aurobindo College, Mahalakshmipuram, Rajajinagar</p>
+        <h1 id="hero-title" class="rise rise-2">A degree that grows the whole person.</h1>
+        <p class="hero-lede rise rise-3">Undergraduate courses in commerce, business and computer applications, shaped by Sri Aurobindo’s idea of integral education: developing the mind, body and character together.</p>
+        <div class="btn-row rise rise-4">
+          <a class="btn btn-solid" href="#courses">Explore courses</a>
+          <a class="btn btn-line" href="tel:+918023492449">Call 080 2349 2449</a>
+        </div>
+      </div>
+
+      <aside class="programmes rise rise-5" aria-labelledby="prog-title">
+        <h2 id="prog-title">Undergraduate programmes</h2>
+        <ul>
+          <li><a href="#bcom"><span class="p-code">B.Com</span><span class="p-years">3 years</span><span class="p-name">Bachelor of Commerce</span></a></li>
+          <li><a href="#bba"><span class="p-code">BBA</span><span class="p-years">3 years</span><span class="p-name">Bachelor of Business Administration</span></a></li>
+          <li><a href="#bca"><span class="p-code">BCA</span><span class="p-years">3 years</span><span class="p-name">Bachelor of Computer Applications</span></a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="College at a glance">
+    <div class="wrap">
+      <ul>
+        <li><strong>Since 1996</strong><span>Founded by the Rajajinagar Education Society</span></li>
+        <li><strong>Co-educational</strong><span>Open to men and women since 2018</span></li>
+        <li><strong>NAAC accredited</strong><span>Quality assessed by the national council</span></li>
+        <li><strong>Bengaluru City University</strong><span>Affiliating university</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <div class="section-head">
+          <h2 id="about-title">About the college</h2>
+        </div>
+        <p>Sri Aurobindo College began in 1996 as Sri Aurobindo First Grade College for Women, started by the Rajajinagar Education Society to bring quality higher education to the neighbourhood.</p>
+        <p>The college is built on the educational ideals of Sri Aurobindo and The Mother. Learning here is meant to go beyond marks: students are encouraged to think independently, take part in cultural and social life, and grow in confidence and character.</p>
+        <p>Today the degree unit offers three undergraduate programmes on a compact campus, where students get individual attention from their teachers.</p>
+      </div>
+
+      <ol class="timeline" aria-label="College history">
+        <li><span class="year">1996</span><p><b>Founded</b>Started as Sri Aurobindo First Grade College for Women.</p></li>
+        <li><span class="year">2018</span><p><b>Co-education</b>Admissions opened to men and women.</p></li>
+        <li><span class="year">2019</span><p><b>New premises</b>The UG and PG units moved to a new building near Rajajinagar Metro Station.</p></li>
+        <li><span class="year">Today</span><p><b>Degree and PG</b>B.Com, BBA and BCA at the degree unit, and M.Com at the PG unit.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-white" id="courses" aria-labelledby="courses-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="courses-title">Courses</h2>
+        <p>Three full-time undergraduate degrees. Each one prepares you for a job, for professional exams, or for a master’s degree.</p>
+      </div>
+
+      <ul class="course-list">
+        <li class="course" id="bcom">
+          <div>
+            <h3>B.Com</h3>
+            <p class="full">Bachelor of Commerce</p>
+            <p class="meta">3 years, full time</p>
+          </div>
+          <div>
+            <h4>What you study</h4>
+            <ul>
+              <li>Financial and corporate accounting</li>
+              <li>Cost and management accounting</li>
+              <li>Income tax and GST</li>
+              <li>Business law and banking</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Where it leads</h4>
+            <ul>
+              <li>Accounts, audit and tax roles</li>
+              <li>Banking and financial services</li>
+              <li>A strong base for CA, CS and CMA</li>
+              <li>M.Com, MBA and further study</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="course" id="bba">
+          <div>
+            <h3>BBA</h3>
+            <p class="full">Bachelor of Business Administration</p>
+            <p class="meta">3 years, full time</p>
+          </div>
+          <div>
+            <h4>What you study</h4>
+            <ul>
+              <li>Principles of management</li>
+              <li>Marketing and human resources</li>
+              <li>Financial management</li>
+              <li>Entrepreneurship and business communication</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Where it leads</h4>
+            <ul>
+              <li>Management trainee roles</li>
+              <li>Sales, marketing and HR</li>
+              <li>Starting your own business</li>
+              <li>MBA and further study</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="course" id="bca">
+          <div>
+            <h3>BCA</h3>
+            <p class="full">Bachelor of Computer Applications</p>
+            <p class="meta">3 years, full time</p>
+          </div>
+          <div>
+            <h4>What you study</h4>
+            <ul>
+              <li>Programming in C, Java and Python</li>
+              <li>Data structures and databases</li>
+              <li>Web technologies</li>
+              <li>Networks and software engineering</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Where it leads</h4>
+            <ul>
+              <li>Software development and testing</li>
+              <li>Web and app development</li>
+              <li>IT support and networking</li>
+              <li>MCA and further study</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <div class="note">
+        <p><strong>Who can apply:</strong> students who have passed II PUC (10+2) or an equivalent exam from a recognised board. Admission is on merit in the qualifying exam.</p>
+        <p>Call the office to confirm subject and percentage requirements for each course.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="campus" aria-labelledby="campus-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="campus-title">Beyond the classroom</h2>
+        <p>Add-on courses for job skills, and a busy calendar of events run with students.</p>
+      </div>
+
+      <div class="beyond-grid">
+        <div>
+          <h3>Add-on and professional courses</h3>
+          <p>Take these alongside your degree to build skills employers look for.</p>
+          <ul class="tag-list">
+            <li>CA coaching</li>
+            <li>CS coaching</li>
+            <li>CMA coaching</li>
+            <li>Tally</li>
+            <li>Java (J2EE)</li>
+            <li>.NET</li>
+            <li>CCNA networking</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Campus life</h3>
+          <ul class="plain-list">
+            <li>Cultural association programmes</li>
+            <li>Annual college fest</li>
+            <li>Festival celebrations</li>
+            <li>Commerce, management and IT competitions</li>
+            <li>Guest lectures and workshops</li>
+            <li>Sports day</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Facilities</h3>
+          <ul class="plain-list">
+            <li>Library and reading room</li>
+            <li>Computer lab</li>
+            <li>Seminar hall</li>
+            <li>Career guidance and placement support</li>
+            <li>Cafeteria</li>
+            <li>Alumni association</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white" id="admissions" aria-labelledby="admit-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="admit-title">Admissions</h2>
+        <p>Four steps from application to your first day.</p>
+      </div>
+
+      <div class="admit-grid">
+        <div>
+          <ol class="steps">
+            <li><div><b>Get the application form</b><p>Download it from the college website or collect it from the college office.</p></div></li>
+            <li><div><b>Submit it with your documents</b><p>Attach copies of the documents listed below.</p></div></li>
+            <li><div><b>Selection on merit</b><p>Seats are given on the basis of marks in the qualifying exam.</p></div></li>
+            <li><div><b>Confirm your seat</b><p>Pay the fees and show your original documents for verification.</p></div></li>
+          </ol>
+
+          <div class="docs">
+            <h3>Documents to keep ready</h3>
+            <ul>
+              <li>SSLC (10th) marks card</li>
+              <li>II PUC (12th) marks card</li>
+              <li>Transfer certificate</li>
+              <li>Passport-size photographs</li>
+              <li>Aadhaar card copy</li>
+              <li>Migration certificate, if from another board</li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="enquiry" id="enquire" novalidate aria-labelledby="enq-title">
+          <h3 id="enq-title">Send an enquiry</h3>
+          <p>Fill this in and your email app opens with the message ready to send to the college office.</p>
+
+          <div class="field" id="f-name">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+            <p class="error" id="name-err">Enter your name.</p>
+          </div>
+          <div class="field" id="f-phone">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+            <p class="error" id="phone-err">Enter a 10-digit mobile number.</p>
+          </div>
+          <div class="field">
+            <label for="course">Course you’re interested in</label>
+            <select id="course" name="course">
+              <option>B.Com</option>
+              <option>BBA</option>
+              <option>BCA</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="msg">Your question (optional)</label>
+            <textarea id="msg" name="msg"></textarea>
+          </div>
+          <button class="btn btn-solid" type="submit">Send enquiry</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="visit-title">Visit us</h2>
+        <p>The campus is in Mahalakshmipuram, a short walk from the Green Line.</p>
+      </div>
+
+      <div class="visit-grid">
+        <div>
+          <ul class="contact-list">
+            <li>
+              <span class="label">Address</span>
+              <address>#6/C, 5th Main, Dr. M. C. Modi Road,<br>Mahalakshmipuram, Rajajinagar,<br>Bengaluru, Karnataka 560086</address>
+            </li>
+            <li><span class="label">Phone</span><a href="tel:+918023492449">080 2349 2449</a></li>
+            <li><span class="label">Email</span><a href="mailto:sriaurobindocollege2019@gmail.com">sriaurobindocollege2019@gmail.com</a></li>
+            <li><span class="label">Official website</span><a href="https://www.sriaurobindocollege.ac.in" target="_blank" rel="noopener">sriaurobindocollege.ac.in</a></li>
+          </ul>
+
+          <div class="metro">
+            <h3>Getting here by Namma Metro</h3>
+            <ol class="metro-line" aria-label="Green Line stations near the college">
+              <li>Sandal Soap Factory</li>
+              <li>Mahalakshmi</li>
+              <li class="here" aria-current="location">Rajajinagar</li>
+              <li>Kuvempu Road</li>
+              <li>Srirampura</li>
+            </ol>
+            <p>Get off at Rajajinagar station on the Green Line.</p>
+          </div>
+        </div>
+
+        <div class="map">
+          <iframe
+            title="Map showing Sri Aurobindo College, Mahalakshmipuram, Bengaluru"
+            src="https://www.google.com/maps?q=Sri%20Aurobindo%20College%2C%20Dr.%20M.%20C.%20Modi%20Road%2C%20Mahalakshmipuram%2C%20Bengaluru%20560086&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer on-dark">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="brand-name">Sri Aurobindo College</p>
+        <p>Degree unit, run by the Rajajinagar Education Society. Affiliated to Bengaluru City University.</p>
+      </div>
+      <div>
+        <h2>On this page</h2>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#campus">Campus life</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#visit">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p>#6/C, 5th Main, Dr. M. C. Modi Road, Mahalakshmipuram, Bengaluru 560086</p>
+        <p><a href="tel:+918023492449">080 2349 2449</a><br><a href="mailto:sriaurobindocollege2019@gmail.com">sriaurobindocollege2019@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&copy; <span id="year">2026</span> Sri Aurobindo College, Bengaluru</p>
+      <p>Mahalakshmipuram, Rajajinagar</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  (function () {
+    var btn = document.querySelector('.menu-btn');
+    var nav = document.getElementById('site-nav');
+    if (!btn || !nav) return;
+    function setOpen(open) {
+      nav.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.textContent = open ? 'Close' : 'Menu';
+    }
+    btn.addEventListener('click', function () {
+      setOpen(btn.getAttribute('aria-expanded') !== 'true');
+    });
+    nav.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setOpen(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') { setOpen(false); btn.focus(); }
+    });
+  })();
+
+  // Enquiry form: opens the visitor's email app with the details filled in
+  (function () {
+    var form = document.getElementById('enquire');
+    if (!form) return;
+    var status = document.getElementById('form-status');
+    var TO = 'sriaurobindocollege2019@gmail.com';
+
+    function check(fieldId, ok) {
+      var f = document.getElementById(fieldId);
+      f.classList.toggle('invalid', !ok);
+      var input = f.querySelector('input');
+      input.setAttribute('aria-invalid', ok ? 'false' : 'true');
+      input.setAttribute('aria-describedby', ok ? '' : input.id + '-err');
+      return ok;
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = form.name.value.trim();
+      var phone = form.phone.value.replace(/[\s-]/g, '').replace(/^(\+91|0)/, '');
+      var course = form.course.value;
+      var msg = form.msg.value.trim();
+
+      var nameOk = check('f-name', name.length > 1);
+      var phoneOk = check('f-phone', /^[6-9]\d{9}$/.test(phone));
+      if (!nameOk) { form.name.focus(); status.textContent = ''; return; }
+      if (!phoneOk) { form.phone.focus(); status.textContent = ''; return; }
+
+      var subject = 'Admission enquiry: ' + course;
+      var body = 'Name: ' + name + '\nPhone: ' + phone + '\nCourse: ' + course + (msg ? '\n\nQuestion:\n' + msg : '');
+      window.location.href = 'mailto:' + TO + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      status.textContent = 'Your email app should open with the enquiry ready to send. If it doesn’t, call 080 2349 2449.';
+    });
+  })();
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
